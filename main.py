@@ -11,6 +11,8 @@ def home():
 def static_render(filepath):
     send_from_directory("static", filepath)
     
-    
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
