@@ -4,10 +4,6 @@
 
 {% block content %}
     {% for item in list %}
-    {% if isfile %}
-    <a href="/media/{{item}}">{{item}}</a>
-    {% else %}
-    <a href="/subdir/{{item}}">{{item}}</a>
-    {% endif %}
+    <a href="/media/{{subdir}}/{{item}}">{{item}}</a>
     {% endfor %}
 {% endblock %}
